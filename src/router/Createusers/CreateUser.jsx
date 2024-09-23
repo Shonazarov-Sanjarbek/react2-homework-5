@@ -9,7 +9,7 @@ const initialState = {
 }
 
 function CreateUser() {
-  const {formdata, setFormData, handleChange} = useGetValues  (initialState)
+  const {formdata, handleChange} = useGetValues  (initialState)
 
   
   const handleSubmit = (e) => {

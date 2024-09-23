@@ -2,8 +2,20 @@ import React from 'react'
 import "./Users.css"
 import male from "../../assets/male-avatar-boy-face-man-user-9.svg"
 import female from "../../assets/female-avatar-girl-face-woman-user-2.svg"
+import { useGetValues } from '../../hooks/UseGetValue'
+
+const initialState = {
+  name: "",
+  profession: "",
+  age: ""
+}
+
+
 
 function Users() {
+  const {formdata, handleChange} = useGetValues  (initialState)
+  console.log(formdata.name);
+
   return (
     <div className='users__wrapper'>
         <div className="users__card">
